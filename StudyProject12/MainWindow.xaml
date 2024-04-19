@@ -1,0 +1,27 @@
+﻿<Window x:Class="StudyProject12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudyProject12"
+        mc:Ignorable="d"
+        Title="Malinin Mikhail 3PKS-120" Height="450" Width="800">
+    <Grid>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Открыть в формате Unicode" Click="MenuItem_Click2"></MenuItem>
+                <MenuItem Header="Открыть в формате Win1251" Click="MenuItem_Click3"></MenuItem>
+                <MenuItem Header="Открыть в формате RTF" Click="MenuItem_Click4"></MenuItem>
+                <Separator />
+                <MenuItem Header="Сохранить как" Click="MenuItem_Click" ></MenuItem>
+                <Separator />
+                <MenuItem Header="Открыть бинарный файл" Click="MenuItem_Click5"></MenuItem>
+                <MenuItem Header="Сохранить как бинарный файл" Click="MenuItem_Click6" ></MenuItem>
+                <Separator />
+                <MenuItem Click="MenuItem_Click7" Header="Распечатать" ></MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBlock HorizontalAlignment="Left" Margin="26,45,0,0" TextWrapping="Wrap" Text="Введите текст" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="131" Margin="26,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="412"/>
+    </Grid>
+</Window>
